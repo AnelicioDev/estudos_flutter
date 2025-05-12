@@ -1,6 +1,7 @@
 
+import 'package:estudos_flutter/pages/login_page.dart';
 import 'package:flutter/material.dart';
-import 'pages/home_page.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -9,9 +10,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 213, 0, 53)),
+        textTheme: GoogleFonts.pacificoTextTheme(),
       ),
-      home: const MyHomePage(title: 'Estudos Flutter'),
+      home: LoginPage(),
     );
   }
 }
